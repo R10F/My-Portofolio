@@ -146,18 +146,18 @@
               <strong>Terima Kasih!</strong> Pesan anda sudah terkirim
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
-            <form name="Form-Contact-Me">
+            <form name="Form-Contact-Me" class="was-validated">
               <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" aria-describedby="name" name="nama lengkap" />
+                <input type="text" class="form-control" id="name" placeholder="Masukkan Nama Lengkap" aria-describedby="name" name="nama lengkap" required />
               </div>
-              <div class="mb-3">
+              <div class="mb-3" class="was-validated">
                 <label for="Email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" aria-describedby="Email" name="email" />
+                <input type="email" class="form-control" id="email" placeholder="Masukkan Email Yang Benar" aria-describedby="Email" name="email" required />
               </div>
-              <div class="mb-3">
+              <div class="mb-3" class="was-validated">
                 <label for="Pesan" class="form-label">Pesan</label>
-                <textarea class="form-control" id="Pesan" rows="3" name="pesan"></textarea>
+                <textarea class="form-control" id="Pesan" placeholder="Masukkan Pesan Anda " rows="3" name="pesan" required></textarea>
               </div>
 
               <button class="btn btn-primary btn-submit" type="submit">Submit</button>
